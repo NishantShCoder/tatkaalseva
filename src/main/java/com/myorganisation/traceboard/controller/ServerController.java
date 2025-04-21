@@ -1,4 +1,4 @@
-package com.myorganisation.tatkaalseva.controller;
+package com.myorganisation.traceboard.controller;
 
 
 import org.springframework.http.HttpStatusCode;
