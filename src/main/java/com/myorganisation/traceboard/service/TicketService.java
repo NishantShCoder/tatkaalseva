@@ -2,6 +2,7 @@ package com.myorganisation.traceboard.service;
 
 import com.myorganisation.traceboard.dto.TicketInputDTO;
 import com.myorganisation.traceboard.dto.TicketOutputDTO;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
