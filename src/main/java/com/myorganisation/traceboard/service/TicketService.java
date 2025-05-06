@@ -1,15 +1,16 @@
+
 package com.myorganisation.traceboard.service;
 
-import com.myorganisation.traceboard.dto.TicketInputDTO;
-import com.myorganisation.traceboard.dto.TicketOutputDTO;
-import org.springframework.stereotype.Service;
+import com.myorganisation.traceboard.dto.TicketRequestDTO;
+import com.myorganisation.traceboard.dto.TicketResponseDTO;
 
 import java.util.List;
 
 public interface TicketService {
-    TicketOutputDTO createTicket(TicketInputDTO ticketInputDTO);
-    TicketOutputDTO getTicket(Integer id);
-    List<TicketOutputDTO> getAllTickets();
-    TicketOutputDTO updateTicket(Integer id, TicketInputDTO ticketInputDTO);
-    String removeTicket(Integer id);
+    TicketResponseDTO createTicket(TicketRequestDTO ticketRequestDTO);
+    TicketResponseDTO getTicket(Long id);
+    List<TicketResponseDTO> getAllTickets();
+    TicketResponseDTO updateTicket(Long id, TicketRequestDTO ticketRequestDTO);
+    String removeTicket(Long id);
+    List<TicketResponseDTO> searchByQuery(String query);
 }
